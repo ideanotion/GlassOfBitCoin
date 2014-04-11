@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">bitcoin-glass</string>
+    <string name="bit_coin">Bitcoin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_stop">stop</string>
+    <string name="action_voice">voice</string>
+    <string name="action_camera">camera</string>
+    <string name="change_time">Change time</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="resume">Resume</string>
+    <string name="set_timer">Set timer</string>
+    <string name="start">Start</string>
+    
+    <string name="currencies">currencies</string>
+    
+    <string name="voicedemo2_second_screen_content">voice content</string>
+<string name="title_activity_voicedemo2_second">voice title</string>
+
+<string name="voicedemo2_second_voice_prompt">voice prompt</string>
+    <string name="livecarddemo_livecard_content">Retrieving\nBit Coin Value</string>
+        <string name="livecarddemo_screen_content">LiveCard Demo\nIs Now Live</string>
+        
+        <string name="voicedemo2_second_voice_trigger">show Bit Coin</string>
+        
+            <string name="camerademo_screen_content">Tap to take photo</string>
+            <string name="camerademo_livecard_content">Camera \nIs Currently Active</string>
+</resources>
