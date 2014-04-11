@@ -1,0 +1,58 @@
+<!-- <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001133">
+
+    <TextView android:id="@+id/livecard_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:textColor="#88eafa"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:text="@string/livecarddemo_livecard_content" />
+
+</FrameLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#001133"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/livecard_btc_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/btc" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/livecard_header"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:text="BTC - USD"/>
+    
+     <TextView android:id="@+id/livecard_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:textColor="#88eafa"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:text="@string/livecarddemo_livecard_content" />
+     
+         <TextView
+            android:id="@+id/currencies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+      <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2" />
+</LinearLayout>

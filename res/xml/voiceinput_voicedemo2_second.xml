@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trigger keyword="@string/voicedemo2_second_voice_trigger">
+
+    <input prompt="@string/voicedemo2_second_voice_prompt" />
+    <constraints microphone="true" />
+
+</trigger>
