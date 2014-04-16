@@ -117,15 +117,7 @@ public class MainActivity extends Activity {
     public boolean onPrepareOptionsMenu(Menu menu) {
         final boolean timeSet = true;//mTimer.getDurationMillis() != 0;
         Log.i("btc: onPrepareOptionsMenu");
-        //menu.setGroupVisible(R.id.no_time_set, !timeSet);
-        //menu.setGroupVisible(R.id.time_set, timeSet);
-        /*if (timeSet) {
-            menu.findItem(R.id.start).setVisible(!mTimer.isRunning() && !mTimer.isStarted());
-            menu.findItem(R.id.resume).setVisible(!mTimer.isRunning() && mTimer.isStarted());
-            menu.findItem(R.id.pause).setVisible(
-                    mTimer.isRunning() && mTimer.getRemainingTimeMillis() > 0);
-            menu.findItem(R.id.reset).setVisible(mTimer.isStarted());
-        }*/
+
         return true;
     }
 
@@ -159,6 +151,7 @@ public class MainActivity extends Activity {
         if (!mSettingTimer) {
             // Nothing else to do, closing the Activity.
             finish();
+            
         }
     }
 
@@ -201,11 +194,7 @@ public class MainActivity extends Activity {
             mAdapter.setCurrencyComponent(
                     component, data.getIntExtra(SelectValueActivity.EXTRA_SELECTED_VALUE, 0));
             mView.updateViews(true);
-            //mView.clearFocus();
-            /*if( mView.isShown() )
-            {
-            	mView.setVisibility(View.GONE);
-            }*/
+          finish();
         }
     }
 
@@ -213,20 +202,13 @@ public class MainActivity extends Activity {
     {
         Intent intent = new Intent(this, VoiceDemoSecondActivity.class);
         startActivity(intent);
-        // ???
-        /*startActivity(intent.setFlags(    // Intent.FLAG_ACTIVITY_NEW_TASK |
-                Intent.FLAG_ACTIVITY_CLEAR_TOP |
-                Intent.FLAG_ACTIVITY_SINGLE_TOP));
-        */
-        /*
-        intent.setComponent(new ComponentName("com.example.bitcoin_glass","VoiceDemoSecondActivity"));
-        startActivity(intent);*/
+       
     }
     
     private void openCamActivity()
     {
         Intent intent = new Intent(this, CamActivity.class);
-        // ???
+
         startActivity(intent.setFlags(    // Intent.FLAG_ACTIVITY_NEW_TASK |
                 Intent.FLAG_ACTIVITY_CLEAR_TOP |
                 Intent.FLAG_ACTIVITY_SINGLE_TOP));
